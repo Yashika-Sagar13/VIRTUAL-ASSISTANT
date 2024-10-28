@@ -24,8 +24,8 @@ def take_command():
               command=listener.recognize_google(voice)
               command=listener.lower()
               
-           if 'alexa' in command:
-               command=command.replace('alexa','')
+           if 'barca' in command:
+               command=command.replace('barca','')
                print (command)
         
     except:
@@ -33,7 +33,7 @@ def take_command():
     return command
  
  
-def run_alexa():
+def run_barca():
      command=take_command()
      print(command)
      if 'play' in command:
@@ -58,4 +58,4 @@ def run_alexa():
          
      else:
         talk("please say the command again")
-run_alexa()       
+run_barca()       
